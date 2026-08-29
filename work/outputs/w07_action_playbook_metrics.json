@@ -1,0 +1,61 @@
+{
+  "purpose": "Human-reviewed Page-1/low-CTR inspection queue; not a prediction, refresh command, or ROI estimate.",
+  "rows_scored": 30000,
+  "eligible_candidates": 2354,
+  "rule": {
+    "min_impressions_90d": 3000,
+    "avg_position_range": [
+      4,
+      10
+    ],
+    "max_ctr_pct": 0.3,
+    "sort_score": "impressions_90d * (0.30 - ctr) / 100 for eligible pages"
+  },
+  "archetypes": [
+    {
+      "archetype": "mid_cycle_ctr_gap",
+      "action_label": "review_title_snippet_and_search_intent",
+      "reason_code": "visible_page1_low_ctr__mid_cycle",
+      "candidates": 905,
+      "median_reference_click_gap": 13.2201
+    },
+    {
+      "archetype": "recently_updated_ctr_gap",
+      "action_label": "diagnose_serp_snippet_and_intent_before_any_refresh",
+      "reason_code": "visible_page1_low_ctr__recent_update",
+      "candidates": 1449,
+      "median_reference_click_gap": 12.227599999999997
+    }
+  ],
+  "freshness_summary": [
+    {
+      "freshness_tier": "0-30",
+      "candidates": 1440,
+      "median_reference_click_gap": 12.20365
+    },
+    {
+      "freshness_tier": "91-180",
+      "candidates": 905,
+      "median_reference_click_gap": 13.2201
+    },
+    {
+      "freshness_tier": "31-90",
+      "candidates": 9,
+      "median_reference_click_gap": 58.936800000000005
+    }
+  ],
+  "input_checks": {
+    "rows_loaded": 30000,
+    "missing_impressions_90d": 0,
+    "invalid_avg_position_nonpositive": 1205,
+    "missing_ctr": 0
+  },
+  "human_review_required": true,
+  "no_go": [
+    "auto_publish_or_edit",
+    "auto_delete_or_redirect",
+    "auto_roi_estimate",
+    "rank_as_refresh_command"
+  ],
+  "figure": "work/figures/w07_action_playbook_queue_summary.png"
+}
