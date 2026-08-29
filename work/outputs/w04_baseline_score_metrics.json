@@ -1,0 +1,26 @@
+{
+  "rows_scored": 30000,
+  "eligible_rows": 2354,
+  "rule": {
+    "min_impressions_90d": 3000,
+    "avg_position_range": [
+      4,
+      10
+    ],
+    "max_ctr_pct": 0.3,
+    "score": "impressions_90d * (0.30 - ctr) / 100 for eligible pages",
+    "reason_code": "visible_page1_low_ctr",
+    "action_label": "review_title_snippet_or_intent"
+  },
+  "signal_verdicts": {
+    "ctr_by_position": "CONFIRMED",
+    "impression_exposure": "CONFIRMED"
+  },
+  "leakage_exclusions": [
+    "trend_direction",
+    "trend_pct",
+    "is_declining_label",
+    "content_id",
+    "client_id"
+  ]
+}
