@@ -162,19 +162,19 @@
       <p class="section-label">Title + abstract</p>
       <h2 id="abstract-heading">Abstract</h2>
       <div class="abstract">
-        <p>This study asks whether a learned ranker can prioritize content items for decline review better than an interpretable Page-1/low-CTR rule.</p>
+        <p>This FlyRank content-review case study asks whether a learned ranker can prioritize existing content items for observed decline review better than an interpretable Page-1/low-CTR rule.</p>
         <p>It uses the FlyRank ML Internship starter release: 30,000 pseudonymized content-item snapshots across 32 pseudonymized clients with trailing-90-day search and content measurements.</p>
         <p>A regularized logistic model and the unchanged rule were evaluated on the same fixed holdout of eight unseen clients.</p>
         <p>At 50 reviewed items, the model identified 41 observed declines (Precision@50 = 0.82) versus 25 for the rule (0.50), against a 0.518 holdout base rate.</p>
-        <p>The result measures alignment with an observed snapshot label and may support human review, but it neither forecasts future decline nor establishes that changing a page will improve search performance.</p>
+        <p>The result supports FlyRank's review-first content workflow—inspect intent, snippet context, and freshness before choosing an action—but it neither forecasts future decline nor establishes that changing a page will improve search performance.</p>
       </div>
     </section>
 
     <section id="introduction" aria-labelledby="introduction-heading">
       <p class="section-label">Introduction / problem statement</p>
-      <h2 id="introduction-heading">Rank scarce review time without pretending to know causes</h2>
-      <p>Content teams often have more pages to inspect than editorial capacity. A defensible queue should make the review criterion visible, preserve human judgment, and avoid treating an observational score as a command to edit or publish.</p>
-      <p>The decision supported here is narrow: which items should an SEO or content specialist inspect first for possible decline or low click-through rate? A wrong prioritization wastes review time or delays an item that deserves investigation; it does not justify an automatic change.</p>
+      <h2 id="introduction-heading">A FlyRank content-review case study: rank scarce inspection time</h2>
+      <p>FlyRank's content problem is practical: a content specialist can face more existing pages to inspect than there is editorial time to investigate them. This case study turns observed organic-search signals into a transparent review queue, while keeping the human—not a score—in charge of diagnosing intent, snippet context, freshness, and the appropriate next step.</p>
+      <p>The decision supported here is narrow: which existing content items should a FlyRank content specialist inspect first for an observed decline or a Page-1/low-CTR gap? A wrong prioritization wastes review time or delays an item that deserves investigation; it does not diagnose the cause, justify an automatic edit, or promise a ranking improvement.</p>
       <div class="stats" aria-label="Study facts">
         <div class="stat"><span class="number">30,000</span><span class="label">content-item snapshots scored</span></div>
         <div class="stat"><span class="number">32</span><span class="label">pseudonymized client groups</span></div>
